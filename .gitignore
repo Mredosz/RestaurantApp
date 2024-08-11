@@ -1,24 +1,75 @@
-# Compiled class file
+# Java/Spring Boot
+/target/
+/.mvn/
+/.idea/
+/*.iml
+/logs/
+/*.log
+/hs_err_pid*
+
+# Ignore all application properties and YAML files
+/src/main/resources/application.properties
+/src/main/resources/application-*.properties
+/src/main/resources/application.yml
+/src/main/resources/application-*.yml
+
+# Compiled class files
 *.class
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
+# Maven specific files
 *.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+*.jar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Eclipse specific files
+/.classpath
+/.project
+/.settings/
+/.sts4-cache/
+
+# IntelliJ IDEA specific files
+/.idea/
+/*.iws
+/*.iml
+/*.ipr
+
+# VS Code specific files
+/.vscode/
+
+# Node/React specific files
+node_modules/
+build/
+/dist/
+
+# MacOS specific files
+.DS_Store
+
+# Linux specific files
+*.swp
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Ignore all except production React build files
+/public/static/
+!/public/static
+/public/static/js/
+/public/static/css/
+/public/static/media/
+/public/static/asset-manifest.json
+/public/static/service-worker.js
+
+# Ignore other config files
+package-lock.json
+yarn.lock
